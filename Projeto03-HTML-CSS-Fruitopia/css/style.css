@@ -1,0 +1,144 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis", sans-serif;
+}
+.principal{
+    width: 80%;
+    margin:auto;
+}
+/* HOME ABOUT CONTACT */
+.navbar{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+ul{
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    display:inline-block;
+    /* Um uso comum para display: inline-block é exibir itens de lista horizontalmente em vez de verticalmente. O exemplo a seguir cria links de navegação horizontal */
+    list-style: none;
+    margin: 0 25px;
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+    padding: 0 10px;
+    position: relative;
+}
+ul li a::after{
+    content: "";
+    width: 0;
+    height: 10px; 
+    background: #f14a60;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -55px;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+.navbar-icons img{
+height:20px;
+margin-left: 40px;
+cursor: pointer;
+}
+.navbar-icons{
+    margin-left: 40px;
+}
+/* HOME ABOUT CONTACT */
+.banner{
+    display:flex;
+    margin-top: 80px;
+    }
+    .left-column,
+    .right-column{
+    flex-basis:50%;
+    /*O flex-basis define o tamanho inicial que um item deve ter antes que o espaço ao seu redor seja distribuído. Ou seja, dependendo da direção do eixo principal (horizontal ou vertical), essa propriedade define a largura ou altura mínima do elemento antes que ele seja redimensionado por outras propriedades.*/
+    }
+    .right-column img{
+        width: 100%;
+    }
+    .search-box{
+    width:45%;
+    display:flex;
+    padding-bottom:3px;
+    border-bottom:1px solid #ddd;
+    margin:10px 0 30px;
+    }
+    .search-box img{
+    height:25px;
+    width: 25px;
+    cursor:pointer;
+    }
+    .search-box input{
+        width:100%;
+        margin-left:15px;
+        font-size:17px;
+        border: 0;
+        outline:none; 
+        color:#f14a60;
+        /* OUTLINE Um contorno é uma linha desenhada fora da borda do elemento. */
+    }
+    .left-column h1{
+        font-size: 100px;
+    }
+    .left-column h3{
+        font-size: 35px;
+    }
+    span{
+        color:#f14a60
+    }
+    .left-column p{
+        font-size: 14px;
+        color:#999;
+        margin: 50px 0;
+    }
+    .btn button{
+        padding: 7px 30px;
+        margin-right: 15px;
+        outline: none;
+        border: 1px solid #fb7381;
+        border-radius: 20px;
+        cursor: pointer;
+        background: transparent;
+        color: #fb7381;
+    }
+    .btn .primary-btn{
+        background: linear-gradient(#fb7381, #f14a60);
+        box-shadow: 0 2px 15px rgba(248,38,103,0.26);
+        color:#fff;
+    }
+    .bnt{
+        margin-bottom: 50px;
+    }
+    .h1,
+     h3{
+        font-family: Verdana;
+    }
+  .social-icons{
+    width: 200px;
+    text-align: center;
+    opacity: 0.4;
+    position: relative;
+    margin-left: 160px;
+  }  
+  .social-icons img{
+    height: 20px;
+    margin: 0 14px;
+  }
+.social-icons::after {
+  content: "";
+  width: 150px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: -160px;
+  top: 10px;
+}
